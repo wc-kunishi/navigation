@@ -242,15 +242,22 @@ body {
 }
 
 .faq_contents {
-    height: 950px;
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+    padding:70px 0;
 }
 
 .faq_contents_list {
+    position:relative;
     width: 630px;
-    margin: 0 auto;
+    margin: 80px auto 0;
+}
+.faq_contents_list img{
+    position: absolute;
+    top: 50px;
+    left: 600px;
+}
+
+.faq_block{
+    margin-top: 50px;
 }
 
 .faq_text {
@@ -275,7 +282,8 @@ body {
 .faq_text_sub {
     background-color: #fff;
     width: 630px;
-    height: 180px;
+    height: auto;
+    padding-bottom: 30px;
 }
 
 .faq_text_sub h4 {
@@ -302,10 +310,15 @@ body {
 }
 
 .hover1 {
-    position: relative;
     cursor: pointer;
+    display: inline;
 }
 
+.hover1:hover {
+    font-weight: bold;
+    color: #ffba52;
+}
+/*
 .hover1:after {
     content: "";
     position: absolute;
@@ -319,22 +332,22 @@ body {
 
 .hover1:hover:after {
     background: url(../images/index_faq1.jpg);
-    /* 表示する画像 */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
 }
+*/
+.hover2 {
+    cursor: pointer;
+    display: inline;
+}
 
-.hover1:hover {
+.hover2:hover {
     font-weight: bold;
     color: #ffba52;
 }
 
-.hover2 {
-    position: relative;
-    cursor: pointer;
-}
-
+/*
 .hover2:after {
     content: "";
     position: absolute;
@@ -346,29 +359,23 @@ body {
     height: 300px;
 }
 
-.hover2:hover {
-    font-weight: bold;
-    color: #ffba52;
-}
-
 .hover2:hover:after {
     background: url(../images/index_faq2.jpg);
-    /* 表示する画像 */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-}
+}*/
 
 .hover3 {
-    position: relative;
     cursor: pointer;
+    display: inline;
 }
 
 .hover3:hover {
     font-weight: bold;
     color: #ffba52;
 }
-
+/*
 .hover3:after {
     content: "";
     position: absolute;
@@ -382,8 +389,7 @@ body {
 
 .hover3:hover:after {
     background: url(../images/index_faq3.png);
-    /* 表示する画像 */
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center top;
-}
+}*/

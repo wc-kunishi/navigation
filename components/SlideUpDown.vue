@@ -14,7 +14,7 @@
   >
     <div class="faq_text_sub topSlide" v-if="isActive">
       <div class="faq_text_sub_center">
-        <h4 v-html="answer"></h4>
+        <slot></slot>
       </div>
     </div>
 </transition>
@@ -24,9 +24,6 @@
 export default {
   props: {
     question: {
-      type: String
-    },
-    answer: {
       type: String
     },
   },

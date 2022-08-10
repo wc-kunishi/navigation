@@ -158,68 +158,18 @@
         </div>
 
         <div class="faq_contents_list">
-          <SlideUpDown question="Q 彼女・彼氏じゃダメなの？"
-            answer="<br>全然違う！！<br>彼女・彼氏は親愛・安心感を求めるのに対して、<br>ナビAIに求めるのは効率化・友達・秘書のような役割として求める。<br>求めるものが違うため両立する。<br>夫・妻がいても推しは別にいるというイメージ" />
-          
-          <SlideUpDown question=" Q 参考作品を教えて" answer='<br>「SAOシリーズ」から<span class="hover1">"ユイ"</span><br>「アイアンマンシリーズ」から<span
-                    class="hover2">"ジャーヴィス"</span><br>「ガニメデの優しい巨人」から"ゾラック"<br>「Beatless」から<span
-                    class="hover3">"レイシア"</span>等<br><br>どの作品でも人間を手助けするAI、よきコンビとして描かれている' />
-
-          <SlideUpDown question="Q 要するに可愛いGoogleアシスタント？"
-            answer="<br>考え方は似ているもの。<br>Googleアシスタントは世界中の人々に馴染んでもらうために、あえて記号的なデザインにして個性を削っていると思われる。<br>私からすると愛着が持ちづらいから、もっと個性を付けたい<br>コンテンツ力の高い日本ならそういうことは得意と考えている" />
-
-          <!--
-          <div class="faq_block">
-            <div class="faq_text">
-              <div class="faq_text_center">
-                <h3>
-                  Q 彼女・彼氏じゃダメなの？</h3>
-              </div>
-            </div>
-            <div class="faq_text_sub">
-              <div class="faq_text_sub_center">
-                <h4>
-                  <br>全然違う！！<br>彼女・彼氏は親愛・安心感を求めるのに対して、<br>ナビAIに求めるのは効率化・友達・秘書のような役割として求める。<br>求めるものが違うため両立する。<br>夫・妻がいても推しは別にいるというイメージ
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq_block">
-            <div class="faq_text">
-              <div class="faq_text_center">
-                <h3>
-                  Q 参考作品を教えて</h3>
-              </div>
-            </div>
-            <div class="faq_text_sub">
-              <div class="faq_text_sub_center">
-                <h4>
-                  <br>「SAOシリーズ」から<span class="hover1">"ユイ"</span><br>「アイアンマンシリーズ」から<span
-                    class="hover2">"ジャーヴィス"</span><br>「ガニメデの優しい巨人」から"ゾラック"<br>「Beatless」から<span
-                    class="hover3">"レイシア"</span>等<br><br>どの作品でも人間を手助けするAI、よきコンビとして描かれている
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          <div class="faq_block">
-            <div class="faq_text">
-              <div class="faq_text_center">
-                <h3>
-                  Q 要するに可愛いGoogleアシスタント？
-                </h3>
-              </div>
-            </div>
-            <div class="faq_text_sub">
-              <div class="faq_text_sub_center">
-                <h4>
-                  <br>考え方は似ているもの。<br>Googleアシスタントは世界中の人々に馴染んでもらうために、あえて記号的なデザインにして個性を削っていると思われる。<br>私からすると愛着が持ちづらいから、もっと個性を付けたい<br>コンテンツ力の高い日本ならそういうことは得意と考えている
-                </h4>
-              </div>
-            </div>
-          </div>
-                  -->
+          <SlideUpDown question="Q 彼女・彼氏じゃダメなの？">
+            <br>全然違う！！<br>彼女・彼氏は親愛・安心感を求めるのに対して、<br>ナビAIに求めるのは効率化・友達・秘書のような役割として求める。<br>求めるものが違うため両立する。<br>夫・妻がいても推しは別にいるというイメージ">
+          </SlideUpDown>
+          <SlideUpDown question=" Q 参考作品を教えて">
+            <br>「SAOシリーズ」から<span class="hover1" v-on:mouseover="mouseOverAction(1)" v-on:mouseleave="mouseLeaveAction(1)">"ユイ"</span><br>「アイアンマンシリーズ」から<span class="hover2" v-on:mouseover="mouseOverAction(2)" v-on:mouseleave="mouseLeaveAction(2)">"ジャーヴィス"</span><br>「ガニメデの優しい巨人」から"ゾラック"<br>「Beatless」から<span class="hover3" v-on:mouseover="mouseOverAction(3)" v-on:mouseleave="mouseLeaveAction(3)">"レイシア"</span>等<br><br>どの作品でも人間を手助けするAI、よきコンビとして描かれている
+          </SlideUpDown>
+          <SlideUpDown question="Q 要するに可愛いGoogleアシスタント？">
+            <br>考え方は似ているもの。<br>Googleアシスタントは世界中の人々に馴染んでもらうために、あえて記号的なデザインにして個性を削っていると思われる。<br>私からすると愛着が持ちづらいから、もっと個性を付けたい<br>コンテンツ力の高い日本ならそういうことは得意と考えている">
+          </SlideUpDown>
+          <img v-if="displayImgNum === 1" src="~/assets/images/index_faq1.jpg" alt="" height="300px" width="300px">
+          <img v-if="displayImgNum === 2"  src="~/assets/images/index_faq2.jpg" alt="" height="300px" width="300px">
+          <img v-if="displayImgNum === 3"  src="~/assets/images/index_faq3.png" alt="" height="300px" width="300px">
         </div>
       </div>
 
@@ -231,6 +181,23 @@
 <script>
 import SlideUpDown from "~/components/SlideUpDown";
 export default {
-  components: { SlideUpDown }
+  components: { SlideUpDown },
+  data() {
+    return {
+      hoverFlag:false,
+      displayImgNum: null,
+    }
+  },
+  methods: {
+    mouseOverAction(index){
+        this.hoverFlag = true
+        this.displayImgNum = index
+    },
+    mouseLeaveAction(){
+        this.hoverFlag = false
+        this.displayImgNum = null
+    }    
+
+  }
 }
 </script>
