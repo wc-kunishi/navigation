@@ -250,12 +250,7 @@ body {
 
 .faq_contents_list {
     width: 630px;
-    height: 750px;
-    display: flex;
-    justify-content: space-around;
     margin: 0 auto;
-    flex-wrap: wrap;
-    align-content: space-between;
 }
 
 .faq_text {
