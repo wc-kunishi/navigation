@@ -159,13 +159,13 @@
 
         <div class="faq_contents_list">
           <SlideUpDown question="Q 彼女・彼氏じゃダメなの？">
-            <br>全然違う！！<br>彼女・彼氏は親愛・安心感を求めるのに対して、<br>ナビAIに求めるのは効率化・友達・秘書のような役割として求める。<br>求めるものが違うため両立する。<br>夫・妻がいても推しは別にいるというイメージ">
+            <br>全然違う！！<br>彼女・彼氏は親愛・安心感を求めるのに対して、<br>ナビAIに求めるのは効率化・友達・秘書のような役割として求める。<br>求めるものが違うため両立する。<br>夫・妻がいても推しは別にいるというイメージ
           </SlideUpDown>
           <SlideUpDown question=" Q 参考作品を教えて">
             <br>「SAOシリーズ」から<span class="hover1" v-on:mouseover="mouseOverAction(1)" v-on:mouseleave="mouseLeaveAction(1)">"ユイ"</span><br>「アイアンマンシリーズ」から<span class="hover2" v-on:mouseover="mouseOverAction(2)" v-on:mouseleave="mouseLeaveAction(2)">"ジャーヴィス"</span><br>「ガニメデの優しい巨人」から"ゾラック"<br>「Beatless」から<span class="hover3" v-on:mouseover="mouseOverAction(3)" v-on:mouseleave="mouseLeaveAction(3)">"レイシア"</span>等<br><br>どの作品でも人間を手助けするAI、よきコンビとして描かれている
           </SlideUpDown>
           <SlideUpDown question="Q 要するに可愛いGoogleアシスタント？">
-            <br>考え方は似ているもの。<br>Googleアシスタントは世界中の人々に馴染んでもらうために、あえて記号的なデザインにして個性を削っていると思われる。<br>私からすると愛着が持ちづらいから、もっと個性を付けたい<br>コンテンツ力の高い日本ならそういうことは得意と考えている">
+            <br>考え方は似ているもの。<br>Googleアシスタントは世界中の人々に馴染んでもらうために、あえて記号的なデザインにして個性を削っていると思われる。<br>私からすると愛着が持ちづらいから、もっと個性を付けたい<br>コンテンツ力の高い日本ならそういうことは得意と考えている
           </SlideUpDown>
           <img v-if="displayImgNum === 1" src="~/assets/images/index_faq1.jpg" alt="" height="300px" width="300px">
           <img v-if="displayImgNum === 2"  src="~/assets/images/index_faq2.jpg" alt="" height="300px" width="300px">
